@@ -19,6 +19,11 @@ ICON = resources/icons/vnote.icns
 
 TRANSLATIONS += translations/vnote_zh_CN.ts
 
+QMAKE_CFLAGS_WARN_ON += -Wno-class-memaccess
+QMAKE_CXXFLAGS_WARN_ON += -Wno-class-memaccess
+QMAKE_CFLAGS += -Wno-class-memaccess
+QMAKE_CXXFLAGS += -Wno-class-memaccess
+
 SOURCES += main.cpp\
     vmainwindow.cpp \
     vdirectorytree.cpp \
